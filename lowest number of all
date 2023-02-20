@@ -1,0 +1,26 @@
+//p//program to print lowest of the following numbers
+/*eg: 
+input:
+15,20,5,24,17
+output:
+lowest is 5*/
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+	int n,i=1,h,ele;  //ele means element
+	printf("Enter the number of elements\n");
+	scanf("%d",&n);
+	while(i<=n)
+	{
+		scanf("%d",&ele);
+		if(i==1)
+		h=ele;
+		if(ele<h)
+		{
+			h=ele;
+		}
+		i++;
+	}
+		printf( "lowest number: %d\n",h);
+}
